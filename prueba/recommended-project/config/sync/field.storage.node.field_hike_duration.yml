@@ -1,0 +1,20 @@
+uuid: 8e0275f4-13ca-44de-802e-ad7d9b12d57e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_hike_duration
+field_name: field_hike_duration
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

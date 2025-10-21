@@ -1,0 +1,24 @@
+name: 'Simple Smart Classy Version'
+type: theme
+description: 'A sleek & practical theme for curious minds.'
+base theme: classy
+
+# Si tu sitio corre en Drupal 9 únicamente:
+core_version_requirement: ^9
+# Si quieres soportar 9 y 10:
+# core_version_requirement: ^9 || ^10
+
+screenshot: simplesmartscreenshot.png
+
+# Carga de library(s) global(es) del tema
+libraries:
+  - simplesmart/global-css
+  - simplesmart/pacifico
+
+regions:
+  header: 'Header'
+  simplesmartmenu: 'Navigation'
+  content: 'Content'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'

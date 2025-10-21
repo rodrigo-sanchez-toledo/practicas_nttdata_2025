@@ -1,0 +1,8 @@
+uuid: 212e8695-9f64-40a0-8e2f-78b8dd1eb3b6
+langcode: en
+status: true
+dependencies: {  }
+id: legal
+label: Legal
+description: 'List of links to legal pages.'
+locked: false

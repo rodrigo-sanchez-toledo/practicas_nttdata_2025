@@ -1,0 +1,27 @@
+uuid: a9d36e33-0759-40e2-9642-5c91b43448a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brochure_block
+    - field.storage.block_content.field_waterfall_brochure
+  module:
+    - file
+id: block_content.brochure_block.field_waterfall_brochure
+field_name: field_waterfall_brochure
+entity_type: block_content
+bundle: brochure_block
+label: 'Waterfall Brochure'
+description: "Upload or select the appropriate document to highlight.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: ''
+  description_field: false
+field_type: file

@@ -1,0 +1,49 @@
+uuid: 2b1d6649-0702-4d35-a83c-a00f34d47c5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brochure_block
+    - field.field.block_content.brochure_block.body
+    - field.field.block_content.brochure_block.field_waterfall_brochure
+  module:
+    - file
+    - text
+id: block_content.brochure_block.default
+targetEntityType: block_content
+bundle: brochure_block
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 26
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_waterfall_brochure:
+    type: file_generic
+    weight: 27
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

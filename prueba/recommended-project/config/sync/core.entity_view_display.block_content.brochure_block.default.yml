@@ -1,0 +1,33 @@
+uuid: b616938f-a52b-439b-9ce7-d0da790ae622
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brochure_block
+    - field.field.block_content.brochure_block.body
+    - field.field.block_content.brochure_block.field_waterfall_brochure
+  module:
+    - file
+    - text
+id: block_content.brochure_block.default
+targetEntityType: block_content
+bundle: brochure_block
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_waterfall_brochure:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

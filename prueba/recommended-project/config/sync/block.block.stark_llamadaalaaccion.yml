@@ -1,0 +1,25 @@
+uuid: e92771b2-219d-4055-8309-647dc181fd01
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cc3ce8d3-94ef-4b0d-927b-a94d72724bc2'
+  module:
+    - block_content
+  theme:
+    - stark
+id: stark_llamadaalaaccion
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:cc3ce8d3-94ef-4b0d-927b-a94d72724bc2'
+settings:
+  id: 'block_content:cc3ce8d3-94ef-4b0d-927b-a94d72724bc2'
+  label: 'Llamada a la acción'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: d07cbbaa-52b7-490a-b3d6-15fc9b5af5c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_waterfall_location
+field_name: field_waterfall_location
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
