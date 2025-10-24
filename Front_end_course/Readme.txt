@@ -14,3 +14,35 @@ de forma natural (título, fecha, imagen, categoría, descripción, body), escog
 Finalmente, exporté la configuración con un ddev drush cex.
 
 Este es el Ejercicio 1. Si añadimos más ejercicios, los iremos listando a continuación con el mismo formato.
+
+
+
+
+Ejercicios 3:
+
+Objetivo: que los eventos tengan URLs tipo /event/nombre-del-evento y quitar palabras como “of”, “the” y “and”.
+
+Módulos usados:
+
+Token
+Pathauto
+Instalación y activación:
+composer require drupal/token drupal/pathauto
+
+Patrón de alias para Event:
+Ir a Configuración > Búsqueda y metadatos > URL aliases > Patterns (/admin/config/search/path/patterns).
+Crear un patrón para “Content” limitado al tipo “Event (event)” con:
+/event/[node:title]
+
+Quitar palabras del alias:
+Ir a Configuración > Búsqueda y metadatos > URL aliases > Settings (/admin/config/search/path/settings).
+Añadir las palabras a String to Remove
+
+Resultado esperado:
+Un título “The Best of Rock and Roll” genera /event/best-rock-roll.
+
+Regenerar alias existentes (opcional):
+/admin/config/search/path/update_bulk → filtrar por “Event” → Regenerate URL aliases.
+
+Exportar configuración:
+drush cex
