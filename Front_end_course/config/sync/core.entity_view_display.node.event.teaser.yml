@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_teaser_description
     - node.type.event
   module:
+    - datetime
     - user
 id: node.event.teaser
 targetEntityType: node
@@ -19,25 +20,24 @@ mode: teaser
 content:
   field_category:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     weight: 2
     region: content
   field_start_date:
-    type: timestamp
-    label: above
+    type: datetime_default
+    label: hidden
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
+      timezone_override: ''
+      format_type: html_date
     third_party_settings: {  }
     weight: 0
     region: content
   field_teaser_description:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.event.field_teaser_description
     - node.type.event
   module:
+    - datetime
     - image
     - text
     - user
@@ -28,7 +29,7 @@ content:
     region: content
   field_category:
     type: entity_reference_label
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
@@ -36,7 +37,7 @@ content:
     region: content
   field_event_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
       image_style: ''
@@ -46,12 +47,11 @@ content:
     weight: 1
     region: content
   field_start_date:
-    type: timestamp
-    label: above
+    type: datetime_default
+    label: hidden
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
+      timezone_override: ''
+      format_type: html_date
     third_party_settings: {  }
     weight: 0
     region: content
