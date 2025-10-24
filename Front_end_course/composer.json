@@ -20,6 +20,8 @@
         "drupal/core-composer-scaffold": "^9.5",
         "drupal/core-project-message": "^9.5",
         "drupal/core-recommended": "^9.5",
+        "drupal/pathauto": "^1.13",
+        "drupal/token": "^1.16",
         "drush/drush": "^11",
         "guzzlehttp/guzzle": "^6.5.8"
     },
