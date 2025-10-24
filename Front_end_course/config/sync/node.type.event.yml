@@ -1,0 +1,18 @@
+uuid: a4b48755-9130-4d95-8c14-5cc2f0ac6774
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Event
+type: event
+description: 'Used to public an event '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
