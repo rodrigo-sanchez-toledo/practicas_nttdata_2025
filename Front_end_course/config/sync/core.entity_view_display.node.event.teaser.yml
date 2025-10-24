@@ -9,9 +9,11 @@ dependencies:
     - field.field.node.event.field_event_image
     - field.field.node.event.field_start_date
     - field.field.node.event.field_teaser_description
+    - image.style.thumbnail
     - node.type.event
   module:
     - datetime
+    - image
     - user
 id: node.event.teaser
 targetEntityType: node
@@ -24,7 +26,18 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
+    region: content
+  field_event_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
     region: content
   field_start_date:
     type: datetime_default
@@ -41,9 +54,8 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
   body: true
-  field_event_image: true
   links: true
