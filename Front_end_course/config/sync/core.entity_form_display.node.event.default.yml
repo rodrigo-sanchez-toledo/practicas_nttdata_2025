@@ -11,6 +11,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.event
   module:
+    - datetime
     - image
     - path
     - text
@@ -54,7 +55,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
   field_start_date:
-    type: datetime_timestamp
+    type: datetime_default
     weight: 126
     region: content
     settings: {  }
