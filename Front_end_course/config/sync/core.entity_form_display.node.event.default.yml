@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_category
     - field.field.node.event.field_event_image
     - field.field.node.event.field_start_date
     - field.field.node.event.field_teaser_description
@@ -34,6 +35,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_category:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_event_image:
     type: image_image
     weight: 122
@@ -44,7 +55,7 @@ content:
     third_party_settings: {  }
   field_start_date:
     type: datetime_timestamp
-    weight: 123
+    weight: 126
     region: content
     settings: {  }
     third_party_settings: {  }

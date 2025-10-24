@@ -1,14 +1,16 @@
-uuid: 7861cdc1-a22c-4213-8220-7c747c66eab5
+uuid: 2f0e929c-659d-4ca2-a337-5da4e78c634f
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_start_date
-field_name: field_start_date
+    - taxonomy
+id: node.field_category
+field_name: field_category
 entity_type: node
-type: timestamp
-settings: {  }
+type: entity_reference
+settings:
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: 1

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.event.body
+    - field.field.node.event.field_category
     - field.field.node.event.field_event_image
     - field.field.node.event.field_start_date
     - field.field.node.event.field_teaser_description
@@ -22,7 +23,15 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 1
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
     region: content
   field_event_image:
     type: image
@@ -33,17 +42,17 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 102
+    weight: 3
     region: content
   field_start_date:
     type: timestamp
     label: above
     settings:
-      date_format: medium
+      date_format: html_date
       custom_date_format: ''
       timezone: ''
     third_party_settings: {  }
-    weight: 103
+    weight: 5
     region: content
   field_teaser_description:
     type: string
@@ -51,11 +60,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 0
     region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
-    region: content
-hidden: {  }
+hidden:
+  links: true
