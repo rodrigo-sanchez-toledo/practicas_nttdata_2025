@@ -1,9 +1,25 @@
 uuid: 8c28c59c-8a80-429d-994b-4d3543c0ac9a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.event
+  module:
+    - content_translation
+    - node
+    - system
+    - taxonomy
 id: editor
 label: Editor
 weight: 4
 is_admin: null
-permissions: {  }
+permissions:
+  - 'access content'
+  - 'access taxonomy overview'
+  - 'create content translations'
+  - 'create event content'
+  - 'delete content translations'
+  - 'delete own event content'
+  - 'edit own event content'
+  - 'translate any entity'
+  - 'update content translations'
