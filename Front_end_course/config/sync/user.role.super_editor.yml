@@ -1,0 +1,9 @@
+uuid: dce2062d-fdac-46a4-b66a-6259341bd456
+langcode: en
+status: true
+dependencies: {  }
+id: super_editor
+label: 'Super editor'
+weight: 5
+is_admin: null
+permissions: {  }

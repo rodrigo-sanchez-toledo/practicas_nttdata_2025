@@ -1,0 +1,14 @@
+uuid: 6ec5e35d-71bd-493a-850d-e4d000037f92
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.technical_admin
+  module:
+    - user
+id: user_remove_role_action.technical_admin
+label: 'Remove the Technical Admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: technical_admin

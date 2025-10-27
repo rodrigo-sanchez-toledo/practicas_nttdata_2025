@@ -1,0 +1,14 @@
+uuid: 9dfbab6b-e97e-4bc9-b4c8-22cc4f8ac143
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.super_editor
+  module:
+    - user
+id: user_remove_role_action.super_editor
+label: 'Remove the Super editor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: super_editor

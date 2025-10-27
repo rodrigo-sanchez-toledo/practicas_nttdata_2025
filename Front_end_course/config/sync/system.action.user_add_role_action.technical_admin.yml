@@ -1,0 +1,14 @@
+uuid: 1453f0d7-4402-44f1-a023-b737205eb90e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.technical_admin
+  module:
+    - user
+id: user_add_role_action.technical_admin
+label: 'Add the Technical Admin role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: technical_admin
