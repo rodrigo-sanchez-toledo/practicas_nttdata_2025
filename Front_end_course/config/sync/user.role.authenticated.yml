@@ -4,25 +4,35 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - node.type.event
   module:
+    - admin_toolbar_search
     - comment
     - contact
+    - field_ui
     - filter
+    - node
     - search
     - shortcut
     - system
+    - toolbar
 _core:
   default_config_hash: I44QAB4es39lNzMQWiJLq2dfjX7VRSOzT_5KzAcUq_M
 id: authenticated
 label: 'Authenticated user'
-weight: 1
+weight: -9
 is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
+  - 'access content overview'
   - 'access shortcuts'
   - 'access site-wide contact form'
+  - 'access toolbar'
+  - 'administer node display'
+  - 'create event content'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use admin toolbar search'
   - 'use text format basic_html'

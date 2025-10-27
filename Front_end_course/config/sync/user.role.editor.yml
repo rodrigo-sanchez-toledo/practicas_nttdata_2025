@@ -5,17 +5,20 @@ dependencies:
   config:
     - node.type.event
   module:
+    - admin_toolbar_search
     - content_translation
     - node
     - system
     - taxonomy
+    - toolbar
 id: editor
 label: Editor
-weight: 4
+weight: -8
 is_admin: null
 permissions:
   - 'access content'
   - 'access taxonomy overview'
+  - 'access toolbar'
   - 'create content translations'
   - 'create event content'
   - 'delete content translations'
@@ -23,3 +26,4 @@ permissions:
   - 'edit own event content'
   - 'translate any entity'
   - 'update content translations'
+  - 'use admin toolbar search'
