@@ -1,0 +1,33 @@
+uuid: 690233ba-1991-4ada-975a-e5a2d18a2939
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: event_patern_french
+label: 'Event patern french'
+type: 'canonical_entities:node'
+pattern: 'ft/event/[node:title]'
+selection_criteria:
+  5dd5bd67-9577-4120-bd41-9410addaa02c:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5dd5bd67-9577-4120-bd41-9410addaa02c
+    context_mapping:
+      node: node
+    bundles:
+      event: event
+  d5b2af61-6e1a-41ef-b531-3eedf47a1113:
+    id: language
+    negate: false
+    uuid: d5b2af61-6e1a-41ef-b531-3eedf47a1113
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      fr: fr
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language
