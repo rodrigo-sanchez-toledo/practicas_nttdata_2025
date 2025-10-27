@@ -57,4 +57,5 @@ content:
     region: content
 hidden:
   field_teaser_description: true
+  langcode: true
   links: true

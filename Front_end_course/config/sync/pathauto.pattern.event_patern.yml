@@ -9,10 +9,10 @@ label: 'Event patern'
 type: 'canonical_entities:node'
 pattern: '/event/[node:title]'
 selection_criteria:
-  c1363428-ad8c-47ba-8a93-d6094928872b:
+  84b8976b-d175-40fe-b23a-831bd8deffe1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: c1363428-ad8c-47ba-8a93-d6094928872b
+    uuid: 84b8976b-d175-40fe-b23a-831bd8deffe1
     context_mapping:
       node: node
     bundles:
