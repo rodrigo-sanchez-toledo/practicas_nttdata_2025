@@ -1,9 +1,0 @@
-uuid: d0e98f77-cbdb-445b-a93c-81665feb7b36
-langcode: en
-status: true
-dependencies: {  }
-id: technical_admin
-label: 'Technical Admin'
-weight: 7
-is_admin: null
-permissions: {  }

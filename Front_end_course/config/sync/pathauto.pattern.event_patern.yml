@@ -3,20 +3,33 @@ langcode: en
 status: true
 dependencies:
   module:
+    - language
     - node
 id: event_patern
 label: 'Event patern'
 type: 'canonical_entities:node'
 pattern: '/event/[node:title]'
 selection_criteria:
-  84b8976b-d175-40fe-b23a-831bd8deffe1:
+  46119dac-a944-44f0-aea5-a11837ba130d:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 84b8976b-d175-40fe-b23a-831bd8deffe1
+    uuid: 46119dac-a944-44f0-aea5-a11837ba130d
     context_mapping:
       node: node
     bundles:
       event: event
+  fa20998f-560e-4a10-8c8f-f4540ba9cc0a:
+    id: language
+    negate: false
+    uuid: fa20998f-560e-4a10-8c8f-f4540ba9cc0a
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      fr: fr
+      es: es
 selection_logic: and
 weight: -5
-relationships: {  }
+relationships:
+  'node:langcode:language':
+    label: Language

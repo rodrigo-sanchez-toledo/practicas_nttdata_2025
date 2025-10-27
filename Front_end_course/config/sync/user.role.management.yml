@@ -12,7 +12,7 @@ dependencies:
     - views_ui
 id: management
 label: Management
-weight: 6
+weight: -6
 is_admin: null
 permissions:
   - 'access content'
